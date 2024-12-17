@@ -1,4 +1,7 @@
-﻿namespace Ass03
+﻿using System.Threading;
+using System;
+
+namespace Ass03
 {
     internal class Program
     {
@@ -97,26 +100,108 @@
             #endregion
 
             #region 10- Write a program to enter marks of five subjects and calculate total, average and percentage.
-            Console.WriteLine("Enter Marks Of Subjects");
-            Console.Write("Enter Sub01 : ");
-            int Sub01 = int.Parse(Console.ReadLine());
-            Console.Write("Enter Sub02 : ");
-            int Sub02 = int.Parse(Console.ReadLine());
-            Console.Write("Enter Sub03 : ");
-            int Sub03 = int.Parse(Console.ReadLine());
-            Console.Write("Enter Sub04 : ");
-            int Sub04 = int.Parse(Console.ReadLine());
-            Console.Write("Enter Sub05 : ");
-            int Sub05 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Marks Of Subjects");
+            //Console.Write("Enter Sub01 : ");
+            //int Sub01 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Sub02 : ");
+            //int Sub02 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Sub03 : ");
+            //int Sub03 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Sub04 : ");
+            //int Sub04 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter Sub05 : ");
+            //int Sub05 = int.Parse(Console.ReadLine());
 
-            int TotalMarks = Sub01+ Sub02 + Sub03+ Sub04+ Sub05;
-            int AverageMarks = TotalMarks/5;
-            int Percentage = (TotalMarks / 500)* 100;
-            Console.WriteLine("Total Marks = { }");
+            //int TotalMarks = Sub01 + Sub02 + Sub03 + Sub04 + Sub05;
+            //int AverageMarks = TotalMarks / 5;
+            //int Percentage = (int)((TotalMarks / 500.0) * 100);
 
+            //Console.WriteLine($"Total Marks = {TotalMarks}\n" +
+            //    $"Average Marks = {AverageMarks}\n" +
+            //    $"Percentage = {Percentage}");
 
 
             #endregion
+
+            #region 11- Write a program to input the month number and print the number of days in that month.
+            //Console.Write("Month Number : ");
+            //int Month = int.Parse(Console.ReadLine());
+
+            //switch (Month)
+            //{   
+            //    case 2:
+            //        Console.WriteLine("Days In Month : 28 , In Leap year : 29");
+            //        break;
+
+            //    case 1:
+            //    case 3:
+            //    case 5:    
+            //    case 7:    
+            //    case 8:    
+            //    case 10:    
+            //    case 12:
+            //        Console.WriteLine("Days In Month : 31 ");
+            //        break;
+
+
+            //    case 4:
+            //    case 6:
+            //    case 9:
+            //    case 11:
+            //        Console.WriteLine("Days In Month : 30");
+            //        break;
+            #endregion
+
+            #region 17 - Create a program that asks the user to input three points(x1, y1), (x2, y2), and(x3, y3), and determines whether these points lie on a single straight line.
+            //Console.WriteLine("Enter (X1 , Y1) ");
+            //Console.Write("X1 : ");
+            //int X1 = int.Parse(Console.ReadLine());
+            //Console.Write("Y1 : ");
+            //int Y1 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter (X2 , Y2) ");
+            //Console.Write("X2 : ");
+            //int X2 = int.Parse(Console.ReadLine());
+            //Console.Write("Y2 : ");
+            //int Y2 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter (X3 , Y3) ");
+            //Console.Write("X1 : ");
+            //int X3 = int.Parse(Console.ReadLine());
+            //Console.Write("Y1 : ");
+            //int Y3 = int.Parse(Console.ReadLine());
+
+            //int tendencyA = (Y2 - Y1) / (X2-X1);
+            //int tendencyB = (Y3 - Y2) / (X3-X2);
+
+            //if (tendencyA == tendencyB)
+            //    Console.WriteLine("these points lie on a single straight line.");
+            //else
+            //    Console.WriteLine("these points not lie on a single straight line.");
+
+            #endregion
+
+            #region 18
+            Console.Write("Enter the number of worker hours : ");
+            double Num = double.Parse(Console.ReadLine());
+
+            if (Num >= 2 && Num <= 3)
+                Console.WriteLine("Highly Efficient");
+            else if (Num > 3 && Num <= 4)
+                Console.WriteLine("increase Your Speed");
+            else if (Num > 4 && Num <= 5)
+                Console.WriteLine("provid with training to enhance Your speed");
+            else if (Num > 5)
+                Console.WriteLine("leave the company :( ");
+            else
+                Console.WriteLine("Invalid");
+
+            #endregion
+
+            #region 21-	Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+
+            #endregion
+
         }
     }
 }
