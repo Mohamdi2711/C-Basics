@@ -26,19 +26,34 @@
             //    Console.WriteLine("Negative");
             //else if (Number == 0)
             //    Console.WriteLine("Zero Is Not Positive Or Negative");
+            //else
+            //    Console.WriteLine("Invalid");
             #endregion
 
             #region 3- Write a program that takes 3 integers from the user then prints the max element and the min element.
-            Console.WriteLine("Plz Enter The Numbers");
-            Console.Write("Number 01 : ");
-            int Num01 = int.Parse(Console.ReadLine());
-            Console.Write("Number 02 : ");
-            int Num02 = int.Parse(Console.ReadLine());
-            Console.Write("Number 03 : ");
-            int Num03 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Plz Enter The Numbers");
+            //Console.Write("Number 01 : ");
+            //int Num01 = int.Parse(Console.ReadLine());
+            //Console.Write("Number 02 : ");
+            //int Num02 = int.Parse(Console.ReadLine());
+            //Console.Write("Number 03 : ");
+            //int Num03 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Max element = {Math.Max(Math.Max(Num01,Num02),Num03)}");
-            Console.WriteLine($"Min element = {Math.Min(Math.Min(Num01, Num02), Num03)}");
+            //Console.WriteLine($"Max element = {Math.Max(Math.Max(Num01,Num02),Num03)}");
+            //Console.WriteLine($"Min element = {Math.Min(Math.Min(Num01, Num02), Num03)}");
+            #endregion
+
+            #region 4- Write a program that allows the user to insert an integer number then check If a number is even or odd.
+            //Console.Write("Enter The Number :  ");
+            //int Number = int.Parse(Console.ReadLine());
+            //if (Number == 0)
+            //    Console.WriteLine("Zero Not Even Or Odd ");
+            //else if (Number % 2 == 0)
+            //    Console.WriteLine("Even");
+            //else if (Number % 2 != 0)
+            //    Console.WriteLine("Odd");
+            //else
+            //    Console.WriteLine("Invalid");
             #endregion
         }
     }
