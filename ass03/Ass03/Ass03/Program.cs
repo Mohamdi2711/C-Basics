@@ -3,6 +3,11 @@ using System;
 
 namespace Ass03
 {
+    class Jop
+    {
+        public string Name { get; set; }
+        public string Location { get; set; }
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -182,26 +187,90 @@ namespace Ass03
             #endregion
 
             #region 18
-            Console.Write("Enter the number of worker hours : ");
-            double Num = double.Parse(Console.ReadLine());
+            //Console.Write("Enter the number of worker hours : ");
+            //double Num = double.Parse(Console.ReadLine());
 
-            if (Num >= 2 && Num <= 3)
-                Console.WriteLine("Highly Efficient");
-            else if (Num > 3 && Num <= 4)
-                Console.WriteLine("increase Your Speed");
-            else if (Num > 4 && Num <= 5)
-                Console.WriteLine("provid with training to enhance Your speed");
-            else if (Num > 5)
-                Console.WriteLine("leave the company :( ");
-            else
-                Console.WriteLine("Invalid");
+            //if (Num >= 2 && Num <= 3)
+            //    Console.WriteLine("Highly Efficient");
+            //else if (Num > 3 && Num <= 4)
+            //    Console.WriteLine("increase Your Speed");
+            //else if (Num > 4 && Num <= 5)
+            //    Console.WriteLine("provid with training to enhance Your speed");
+            //else if (Num > 5)
+            //    Console.WriteLine("leave the company :( ");
+            //else
+            //    Console.WriteLine("Invalid");
 
             #endregion
 
             #region 21-	Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+            //int x = 5;
+            //int y = 10;
+            //Console.WriteLine($"Before Modifying X = {x} , Y = {y} ");  //(5,10)
+            //y = x;
+            //x = 22;
+            //Console.WriteLine($"After Modifying X = {x} , Y = {y} ");  //(22,5)
+            #endregion
+
+            #region 22-	Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
+            //Jop j01 = new Jop();
+            //j01.Name = "Editor";
+            //j01.Location = "Cairo";
+            //Jop j02 = new Jop();
+            //j02 = j01;
+            //j02.Name = "Developer";
+            //j02.Location = "ALex";
+
+            //Console.WriteLine(j02.Name + " , "+ j02.Location); //(Developer , Alex)
+            //Console.WriteLine(j01.Name + " , " + j01.Location); //(Developer , Alex)
+
 
             #endregion
 
+            #region 23-	Which of the following statements is correct about the C#.NET code snippet given below?
+            //int d;
+            //d = Convert.ToInt32(!(30 < 20));
+            ///*
+            //    a)	A value 0 will be assigned to d.
+            //    b)	A value 1 will be assigned to d.  ==>TRUE (Condition will be true and convert (true) = 1 )
+            //    c)	A value -1 will be assigned to d.
+            //    d)	The code reports an error.
+            //    e)	The code snippet will work correctly if ! is replaced by Not.
+            // */
+            #endregion
+
+            #region 24-	Which of the following is the correct output for the C# code given below?
+            //Console.WriteLine(13 / 2 + " " + 13 % 2);
+
+            ///*
+            //    a)	6.5 1
+            //    b)	6.5 0
+            //    c)	6 0
+            //    d)	6 1  ==> TRUE (13/2 = 6 Two Type Int So Result = 6 if 13.0/2 Result will = 6.5  ,
+            //                       13 % 2 = 1)
+            //    e)	6.5 6.5
+            // */
+            #endregion
+
+            #region 25-	What will be the output of the C# code given below?
+            //int num = 1, z = 5;
+
+            //if (!(num <= 0))
+            //    Console.WriteLine(++num + z++ + " " + ++z);
+            //else
+            //    Console.WriteLine(--num + z-- + " " + --z);
+
+            ///*
+            //    a)	5 6
+            //    b)	6 5
+            //    c)	6 6
+            //    d)	7 7     ==>TRUE (Condition will be true , ++num (2) And Num = 2  ,
+            //                                                  z++   (5) And z   = 6  ,
+            //                                                  ++z   (7) And z   = 7   )
+
+            // */
+            #endregion
         }
+
     }
 }
