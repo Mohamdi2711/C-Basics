@@ -11,9 +11,9 @@ namespace Ass04
             #region 1 - Write a program that allows the user to insert an integer then print all numbers between 1 to that number.
             //Console.Write("Enter Num : ");
             //int Num = int.Parse(Console.ReadLine());
-            //for(int i =1 ; i <= Num ; i++)
+            //for (int i = 1; i <= Num; i++)
             //{
-            //    if(i == Num)
+            //    if (i == Num)
             //    {
             //        Console.Write($"{i}");
             //        break;
@@ -69,7 +69,7 @@ namespace Ass04
             //}
             #endregion
 
-            #region 6- Write a program in C# Sharp to find prime numbers within a range of numbers.
+            #region 6**- Write a program in C# Sharp to find prime numbers within a range of numbers.
             //Console.WriteLine("Enter Number Of Start Range : ");
             //int StartRange = int.Parse(Console.ReadLine());
             //Console.WriteLine("Enter Number Of End Range : ");
@@ -77,7 +77,7 @@ namespace Ass04
 
             #endregion
 
-            #region 7- . Write a program in C# Sharp to convert a decimal number into binary without using an array.
+            #region 7**- . Write a program in C# Sharp to convert a decimal number into binary without using an array.
 
             #endregion
 
@@ -211,7 +211,7 @@ namespace Ass04
             //    Console.WriteLine(i);
             #endregion
 
-            #region 14- Write a program in C# Sharp to count the frequency of each element of an array.
+            #region 14**- Write a program in C# Sharp to count the frequency of each element of an array.
             //int[] Arr = { 1, 2, 3, 4, 5, 4, 2, 2, 4, 1 };
 
 
@@ -252,7 +252,7 @@ namespace Ass04
             //Console.WriteLine($"the max value is : {max}");
             #endregion
 
-            #region 16- Write a program in C# Sharp to find the second largest element in an array.
+            #region 16**- Write a program in C# Sharp to find the second largest element in an array.
             //int[] arr = { 51, 73, 24, 54, 25 };
             //Array.Sort(arr);
             //Console.WriteLine(arr[arr.Length-2]);
