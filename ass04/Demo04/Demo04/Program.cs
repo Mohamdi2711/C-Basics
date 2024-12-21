@@ -150,7 +150,7 @@ namespace Demo04
 
             #endregion
 
-            #region Array 1 D
+            #region  1D Array
             //int[] Number = new int[3] {1,2,3} ; // 4*3 = 12 byte
             //int[] Number = new int [] {1,2,3} ;
             //int[] Number = { 1, 2, 3 };
@@ -177,8 +177,69 @@ namespace Demo04
             //}
 
             #endregion
-            
 
+            #region 2D Array
+            //int[,] Marks = new int[3, 5];
+
+            //Console.WriteLine(Marks.Length);
+            //Console.WriteLine(Marks.Rank);
+            //Console.WriteLine(Marks.GetLength(0));
+            //Console.WriteLine(Marks.GetLength(1));
+
+            //for(int i = 0;i< Marks.GetLength(0);i++)
+            //{
+            //    Console.WriteLine($"Enter Grade Of Student ({i+1}) ");
+            //    for (int j = 0; j < Marks.GetLength(1);)
+            //    {
+            //        bool flag;
+            //        Console.Write($"Sub {j + 1} : ");
+            //        flag = int.TryParse(Console.ReadLine(), out Marks[i, j]);
+
+            //        //if(flag && Marks[i,j]>=0)
+            //        //{
+            //        //    j++; 
+            //        //}
+
+            //        j = flag && Marks[i, j] >= 0 ? ++j : j;
+
+            //    }
+            //    Console.WriteLine(" ");
+            //}
+
+
+            //for (int i = 0; i < Marks.GetLength(0); i++)
+            //{
+            //    Console.WriteLine($"Grade Of Student ({i + 1}) ");
+            //    for (int j = 0; j < Marks.GetLength(1); j++)
+            //    {
+            //        Console.Write($"Sub {j + 1} : {Marks[i, j]}  ");
+            //    }
+            //    Console.WriteLine(" ");
+            //    Console.WriteLine(" ");
+            //}
+
+            //equation of loop
+            //for (int i = 0; i < Marks.Length; i++)
+            //{
+            //    Console.WriteLine(Marks[i/Marks.GetLength(1),i%Marks.GetLength(1)]);
+            //}
+            #endregion
+
+            #region Judged Array
+            //int[][] Number = new int[3][];
+
+            //Number[0] = new int[3] {1,2,3};
+            //Number[1] = new int[2] {4,5};
+            //Number[2] = new int[1] {6};
+
+            //for (int i = 0; i < Number.Length; i++)
+            //{ 
+            //    for(int j = 0; j < Number[i].Length; j++)
+            //    {
+            //        Console.WriteLine(Number[i][j]);
+            //    }
+            //}
+            #endregion
         }
     }
 }
