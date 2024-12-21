@@ -1,11 +1,26 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.ComponentModel;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
+using System.Numerics;
+using System;
 
 namespace Ass04
 {
     internal class Program
     {
+        static bool IsPrime(int number)
+        {
+            if (number <= 1)
+                return false;
+
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+            return true;
+        }
         static void Main(string[] args)
         {
             #region 1 - Write a program that allows the user to insert an integer then print all numbers between 1 to that number.
@@ -69,31 +84,48 @@ namespace Ass04
             //}
             #endregion
 
-            #region 6**- Write a program in C# Sharp to find prime numbers within a range of numbers.
-            //Console.WriteLine("Enter Number Of Start Range : ");
+            #region 6- Write a program in C# Sharp to find prime numbers within a range of numbers.
+            //Console.Write("Enter Number Of Start Range : ");
             //int StartRange = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter Number Of End Range : ");
+            //Console.Write("Enter Number Of End Range : ");
             //int EndRange = int.Parse(Console.ReadLine());
 
+            //for (int i = StartRange; i <= EndRange; i++)
+            //{
+            //    if (IsPrime(i))
+            //    {
+            //        Console.Write($"{i} ");
+            //    }
+            //}
             #endregion
 
-            #region 7**- . Write a program in C# Sharp to convert a decimal number into binary without using an array.
+            #region 7- . Write a program in C# Sharp to convert a decimal number into binary without using an array.
+            //Console.Write("Enter number You Want Convert To Binary : ");
+            //int num = int.Parse(Console.ReadLine());
+            //string binary = "";
 
+            //while (num > 0)
+            //{
+            //    binary = $"{(num % 2)} "+ binary;
+            //    num /= 2;
+            //}
+
+            //Console.WriteLine(binary);
             #endregion
 
             #region 8- . Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
             //Console.Write("Enter Size Of Array : ");
-            //int N =int.Parse(Console.ReadLine());
+            //int N = int.Parse(Console.ReadLine());
             //int[,] IdentityMatrix = new int[N, N];
             //for (int i = 0; i < IdentityMatrix.GetLength(0); i++)
-            //{ 
+            //{
             //    for (int j = 0; j < IdentityMatrix.GetLength(1); j++)
             //    {
-            //        if (i==j)
+            //        if (i == j)
             //        {
-            //            IdentityMatrix[i,j] = 1;
+            //            IdentityMatrix[i, j] = 1;
             //        }
-            //        Console.Write($"{IdentityMatrix[i,j]} ");
+            //        Console.Write($"{IdentityMatrix[i, j]} ");
             //    }
             //    Console.WriteLine("  ");
             //}
@@ -211,22 +243,27 @@ namespace Ass04
             //    Console.WriteLine(i);
             #endregion
 
-            #region 14**- Write a program in C# Sharp to count the frequency of each element of an array.
-            //int[] Arr = { 1, 2, 3, 4, 5, 4, 2, 2, 4, 1 };
+            #region 14- Write a program in C# Sharp to count the frequency of each element of an array.
+            //int[] arr = { 1, 2, 3, 4, 5, 4, 2, 2, 4, 1 };
 
 
-            //for (int j = 0; j < Arr.Length; j++)
+            //for (int i = 0; i < arr.Length; i++)
             //{
-            //    int Select = Arr[j];
-            //    int count = 1 ;
-            //    for (int i = 0; i < Arr.Length; i++)
+            //    if (arr[i] != -1)
             //    {
-            //        if (Select == Arr[i])
+            //        int count = 1;
+            //        for (int j = i + 1; j < arr.Length; j++)
             //        {
-            //            count++;
+            //            if (arr[i] == arr[j])
+            //            {
+            //                count++;
+            //                arr[j] = -1;
+            //            }
             //        }
+            //        Console.WriteLine($"{arr[i]} appears {count} times");
             //    }
             //}
+
             #endregion
 
             #region 15- Write a program in C# Sharp to find maximum and minimum element in an array
@@ -252,7 +289,7 @@ namespace Ass04
             //Console.WriteLine($"the max value is : {max}");
             #endregion
 
-            #region 16**- Write a program in C# Sharp to find the second largest element in an array.
+            #region 16- Write a program in C# Sharp to find the second largest element in an array.
             //int[] arr = { 51, 73, 24, 54, 25 };
             //Array.Sort(arr);
             //Console.WriteLine(arr[arr.Length-2]);
@@ -270,15 +307,15 @@ namespace Ass04
             //}
             //int distance = 0;
             //int MaxD = 0;
-            //if (Arr[0] == Arr[Arr.Length - 1]) 
+            //if (Arr[0] == Arr[Arr.Length - 1])
             //{
-            //    Console.WriteLine($"The Number Of Cells = {Arr.Length-2}");
+            //    Console.WriteLine($"The Number Of Cells = {Arr.Length - 2}");
             //}
-            //else 
-            //{ 
+            //else
+            //{
             //    for (int i = 0; i < Arr.Length; i++)
             //    {
-            //        for(int j = 1;j<Arr.Length; j++) 
+            //        for (int j = 1; j < Arr.Length; j++)
             //        {
             //            if (Arr[i] == Arr[j])
             //            {
@@ -330,6 +367,8 @@ namespace Ass04
             //    }
             //}
 
+            //OR == >  Array.Copy(Arr01,Arr02,Arr01.Length)
+
             //for (int i = 0; i < Arr02.GetLength(0); i++)
             //{
             //    for (int j = 0; j < Arr02.GetLength(1); j++)
@@ -349,7 +388,12 @@ namespace Ass04
             //    Console.WriteLine(Arr01[i]);
             //}
 
+            //OR  == >  Array.Reverse(Arr01);
+
+
+
             #endregion
+
 
         }
     }
